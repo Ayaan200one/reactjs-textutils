@@ -54,19 +54,7 @@ export default function TextForm(props) {
     }
     
   }
-  
-  const SortTxt = () => {
-    if(text !== '')
-    {
-      var sortTxt = document.getElementById("text");
-      // setText(sortTxt).sort();
-      sortTxt.sort();
-    }
-    else
-    {
-      props.showAlert("There's Nothing To Copy Into TextBox","warning");
-    }
-    
+
   }
 
   const RemoveExtraSpaces = () => {
@@ -84,7 +72,6 @@ export default function TextForm(props) {
             <div class="btn-group mt-4 btn-group-sm" role="group" aria-label="Basic mixed styles example">
               <button type="button" disabled={text.length === 0} onClick={UpperCase} class="btn btn-success">Upper Case</button>
               <button type="button" disabled={text.length === 0} onClick={LowerCase} class="btn btn-warning">Lower Case</button>
-              <button type="button" disabled={text.length === 0} onClick={SortTxt} class="btn btn-info">Sort (A-Z)</button>
            </div>
           </div>
           <div className="col-md-6 col-sm-12">
