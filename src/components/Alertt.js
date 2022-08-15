@@ -10,7 +10,7 @@ export default function Alertt(props) {
     /* if props.alert is not null then we will get rest code */
       <div className="AlertBox">
       {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
-          <strong>{Capatalize(props.alert.type)} </strong>: {props.alert.msg}
+          <strong>{Capatalize(props.alert.type)} </strong> {props.alert.msg}
         </div>}
       </div>
   )
