@@ -15,11 +15,11 @@ function App() {
           // if (localStorage.getItem('darkMode')==="light"){
             setDarkMode('dark');
             localStorage.setItem('setDarkMode', "dark");    
-            document.body.style.cssText = "background-color:grey; color:#fff";
+            document.body.style.cssText = "background-color:#242D40; color:#fff";
             // localStorage.setItem("setDarkMode", "dark");
               // for text
               document.getElementById("text").style.cssText = `
-              background-color: #a7a4a4;
+              background-color: #213440;
               color: #fff;
               border: dashed black;
               &:focus > #text {
@@ -27,7 +27,7 @@ function App() {
               `;
               // for preview textarea
               document.getElementById("prevTxt").style.cssText = `
-              background-color: #a7a4a4;
+              background-color: #213440;
               color: #fff;
               border: dashed black;
               cursor: none;
