@@ -100,7 +100,8 @@ export default function TextForm(props) {
             }).length
           }</b> Word(s) 
         </span>
-        <span className="mx-2"><b>{text.length}</b> char(s)</span>
+        {/* <span className="mx-2"><b>{text.length}</b> char(s)</span> */}
+        <span className="mx-2"><b>{text.replace(/\s/g, "").length}</b> char(s)</span> {/* for not count spaces as characters */}
         <span className="">
           <span>Reading Time:</span><b>{" "}</b>
           <b>{0.008 *
