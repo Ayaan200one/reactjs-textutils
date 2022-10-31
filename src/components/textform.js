@@ -10,16 +10,16 @@ export default function TextForm(props) {
   };
 
   // Function to convert UpperCase
-  const UpperCase = () => {
-    if (text !== "") {
-      let newUppertext = text.toUpperCase();
-      setText(newUppertext);
-      props.showAlert("Converted to Uppercase", "success");
-      //   console.log(newUppertext);
-    } else {
-      props.showAlert("There's Nothing To UpperCase Into TextBox", "warning");
-    }
-  };
+  // const UpperCase = () => {
+  //   if (text !== "") {
+  //     let newUppertext = text.toUpperCase();
+  //     setText(newUppertext);
+  //     props.showAlert("Converted to Uppercase", "success");
+  //     //   console.log(newUppertext);
+  //   } else {
+  //     props.showAlert("There's Nothing To UpperCase Into TextBox", "warning");
+  //   }
+  // };
 
   // Function to convert LowerCase
   const LowerCase = () => {
@@ -75,7 +75,7 @@ export default function TextForm(props) {
         <div className="row">
           <div className="col-md-6">
             <div class="btn-group mt-4 btn-group-sm" role="group" aria-label="Basic mixed styles example">
-              <button type="button" disabled={text.length === 0} onClick={UpperCase} class="btn btn-success">Upper Case</button>
+              {/* <button type="button" disabled={text.length === 0} onClick={UpperCase} class="btn btn-success">Upper Case</button> */}
               <button type="button" disabled={text.length === 0} onClick={LowerCase} class="btn btn-warning">Lower Case</button>
            </div>
           </div>
