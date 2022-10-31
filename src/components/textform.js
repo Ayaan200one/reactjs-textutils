@@ -9,6 +9,7 @@ export default function TextForm(props) {
     setText(event.target.value);
   };
 
+  // Function to convert UpperCase
   const UpperCase = () => {
     if (text !== "") {
       let newUppertext = text.toUpperCase();
@@ -19,6 +20,8 @@ export default function TextForm(props) {
       props.showAlert("There's Nothing To UpperCase Into TextBox", "warning");
     }
   };
+
+  // Function to convert LowerCase
   const LowerCase = () => {
     if (text !== "") {
       let newLowertext = text.toLowerCase();
@@ -29,6 +32,8 @@ export default function TextForm(props) {
       props.showAlert("There's Nothing To LowerCase Into TextBox", "warning");
     }
   };
+
+  // Function to ClearText
   const ClearTxt = () => {
     if (text !== "") {
       let Cleartext = "";
@@ -40,6 +45,7 @@ export default function TextForm(props) {
     }
   };
 
+  // Function to CopyText
   const CopyTxt = () => {
     if(text !== '')
     {
@@ -55,6 +61,7 @@ export default function TextForm(props) {
     
   }
   
+  // Function to RemoveExtraSpaces
   const RemoveExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
